@@ -5,22 +5,18 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import techproed.utilities.Driver;
 
-public class TestCenterPage {
+public class LoginPage {
 
-    public TestCenterPage(){
-        //used to initiate the page objects
+    public LoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    //driver.findElement(By.name("username)); TRADITIONAL
-    @FindBy(name="username")
+    @FindBy(name = "email")
     public WebElement userName;
 
-    @FindBy(name="password")
+    @FindBy(name = "password")
     public WebElement password;
 
-    @FindBy(xpath="//button[@type='submit']")
-    public WebElement submitButton;
-
-
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement loginButton;
 }
