@@ -2,13 +2,12 @@ package techproed.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import techproed.pages.OpenSourcePage;
 import techproed.pages.TestCenterPage;
 import techproed.pages.TestHomePage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 
-public class TestCenterLogIn {
+public class TestCenterLogIn_hw {
     @Test
     public void TestCenterLogInTest(){
         TestCenterPage testCenterPage=new TestCenterPage();

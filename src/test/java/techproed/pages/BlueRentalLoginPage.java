@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import techproed.utilities.Driver;
 
-public class LoginPage {
+public class BlueRentalLoginPage {
 
-    public LoginPage(){
+    public BlueRentalLoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -19,4 +19,10 @@ public class LoginPage {
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
+
+    @FindBy(xpath = "//div[.='Bad credentials']")
+    public  WebElement badCredentialAlert;
+
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[1]")
+    public  WebElement invalidEmailFeedBack;
 }
