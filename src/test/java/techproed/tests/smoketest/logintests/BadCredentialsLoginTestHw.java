@@ -37,7 +37,8 @@ Error Message: Bad credentials
         ReusableMethods.waitFor(3);
         blueRentalLoginPage.userName.sendKeys(" jack@gmail.com ");
         ReusableMethods.waitFor(3);
-        blueRentalLoginPage.password.sendKeys("123456");
+        Faker faker=new Faker();
+        blueRentalLoginPage.password.sendKeys(faker.internet().password());
         ReusableMethods.waitFor(3);
         blueRentalLoginPage.loginButton.click();
         ReusableMethods.waitFor(3);
