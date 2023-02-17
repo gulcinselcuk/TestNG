@@ -12,7 +12,7 @@ public class Day18_PositiveLoginTest {
     BlueRentalHomePage blueRentalHomePage;
     BlueRentalLoginPage blueRentalLoginPage;
 
-    @Test
+    @Test(retryAnalyzer = techproed.utilities.ListenersRetry.class)
     public void US100201_Admin_Login(){
         //going home page
         Driver.getDriver().get(ConfigReader.getProperty("app_home_url"));
